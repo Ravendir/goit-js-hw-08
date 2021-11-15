@@ -37,4 +37,4 @@ function fillingForm() {
     refs.area.value = takeValue.message;
   }
 }
-fillingForm();
+// fillingForm();
