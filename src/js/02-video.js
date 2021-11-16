@@ -9,7 +9,7 @@ const timeCodeSaved = data => {
   localStorage.setItem(TIME_CODE, data.seconds);
 };
 
-const takeTimeCode = localStorage.getItem(timeCodeSaved);
+const takeTimeCode = localStorage.getItem(TIME_CODE);
 player.setCurrentTime(takeTimeCode);
 
 player.on('timeupdate', throttle(timeCodeSaved, 1000));
